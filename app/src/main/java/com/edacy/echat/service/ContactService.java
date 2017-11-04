@@ -1,6 +1,6 @@
 package com.edacy.echat.service;
 
-import com.edacy.echat.contacts.Contact;
+import com.edacy.echat.model.contacts.Contact;
 
 import java.util.List;
 

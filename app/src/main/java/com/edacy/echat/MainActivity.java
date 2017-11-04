@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.edacy.echat.ui.ContactsActivity;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;

@@ -1,4 +1,4 @@
-package com.edacy.echat.contacts;
+package com.edacy.echat.ui;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -10,8 +10,8 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.edacy.echat.R;
+import com.edacy.echat.model.contacts.Contact;
 
-import java.net.URI;
 import java.util.List;
 
 import butterknife.BindView;
@@ -61,10 +61,10 @@ public class ContactsAdapter extends RecyclerView.Adapter<ContactsAdapter.ViewHo
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
         Contact c = mContacts.get(position);
-        holder.fullName.setText(c.fullName);
+        holder.fullName.setText(c.getFullName());
 
         Glide.with(mContext)
-                .load(c.picture)
+                .load(c.getPicture())
                 .into(holder.picture);
     }
 
